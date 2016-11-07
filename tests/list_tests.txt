@@ -1,0 +1,52 @@
+List Tests:
+
+1)  l =[1,2,3]
+    l.extend([1,2])
+
+    Output?
+
+2) l = [1,2,3]
+   print(l.append(None))
+   print(l)
+
+   Output?
+
+3) l = [1,2,3]
+   print(l.sort)
+
+4) l = [1,2,3]
+   print(l.reverse)
+
+5) l = [1,2,3]
+   print(l.reverse())
+
+6) l = [1,2,3]
+   l.index(10)
+
+
+7) l1 = [1,2,3]
+   l2 = [1,2,3]
+
+   l1+l2
+   Output?
+
+   l1-l2
+   Output?
+
+   l1*3
+   Output?
+
+8) l = [1,2,3]
+   last_element = l.pop()
+   print(last_element)
+   print(l)
+
+9) l =[1,2,3]
+   "A" in l
+   "B" not in l
+
+10) l = [1,2,3]
+    another_list = l[::-1]
+
+    print(id(l))
+    print(id(another_list))
