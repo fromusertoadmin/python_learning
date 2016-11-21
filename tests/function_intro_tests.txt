@@ -1,0 +1,58 @@
+
+1)
+t()
+
+def t():
+    print('function')
+
+
+2)
+
+def func():
+    print('func')
+
+print(func())
+print(func)
+
+
+3)
+def func(a,b,c):
+    return a + b + c
+
+func(0, 0)
+func(0, '1', 0)
+func(1)
+
+4)
+
+def func(a, b, c):
+    return a + b + c
+
+print(func(10,10,10))
+
+another_func = func
+print(another_func(10,10,10))
+
+5)
+a = 0
+if a == 0:
+    def func():
+        print('func')
+
+func()
+
+
+6)
+def execute_operation(*args):
+    print(args)
+
+execute_operation(None, None, None, 3,4,5,6)
+
+7)
+def func(a, b, c=0, *args, **kwargs):
+    pass
+
+def func():
+    print('func')
+
+func(10, 10, 5, 1,2,3,4, name=123, test=156)
