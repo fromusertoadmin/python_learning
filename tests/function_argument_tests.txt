@@ -1,0 +1,72 @@
+
+1)
+var = 0
+
+
+def func(var):
+    var = 76
+
+func(0)
+print(var)
+
+2)
+def func(*args):
+    args[0] = 76
+
+
+func(1, 2, 3, 4, 5)
+
+
+3)
+
+
+
+def func(*args, **kwargs):
+    print(type(kwargs))
+    kwargs['another_key'] = 123
+    return kwargs
+
+
+dict = {'one': 1, 'two': 2}
+
+res_from_func = func(1, 2, 3, 4, 5, **dict)
+print(res_from_func)
+
+print(dict)
+
+
+def another_func(dict_var):
+    dict_var['another_key'] = 123
+    return dict_var
+
+print(another_func(dict))
+print(dict)
+
+
+4)
+l = [1,2,3]
+
+def func():
+    l.append(40)
+
+print(l)
+func()
+print(l)
+
+
+5)
+
+l = [1, 2, 4]
+
+
+def another_func():
+    l.append(56)
+
+
+def func(l):
+    l.append(70)
+
+another_func()
+func(l)
+
+print(l)
