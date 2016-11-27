@@ -1,0 +1,44 @@
+1)
+
+gen = (x for x in [1,2,3])
+
+print(gen)
+
+#print(list(gen))
+
+print(next(gen))
+
+print(next(gen))
+
+print(next(gen))
+
+try:
+  print(next(gen))
+except StopIteration:
+  print('iteration finished')
+  
+another_gen = (x for x in [1,2,3])
+print(another_gen)
+print(list(another_gen))
+
+
+2)gen = lambda item : yield item +1
+
+3)def gen_func(items):
+  for i in items:
+    return i
+    
+gen = gen_func([0,1,2])
+print(gen)
+
+
+4)
+
+def gen_func(items):
+  for i in items:
+    yield i
+    
+gen = gen_func([0,1,2])
+print(gen)
+print(list(gen))
+print(next(gen))
