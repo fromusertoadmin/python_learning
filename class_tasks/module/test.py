@@ -1,0 +1,2 @@
+from sample_package import another_module
+from sample_package import sample_package_module
